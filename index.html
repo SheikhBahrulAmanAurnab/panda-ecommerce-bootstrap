@@ -8,6 +8,8 @@
     <title>Document</title>
     <!-- bootstrap link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -29,13 +31,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#Shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Backpack</a>
+                            <a class="nav-link" href="#Backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Subscribe</a>
+                            <a class="nav-link" href="#Subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
@@ -47,7 +49,7 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row p-5 d-flex align-items-center bg-info bg-gradient">
+                        <div class="row p-5 d-flex align-items-center panda-bg-info bg-gradient">
                             <div class="col-lg-7">
                                 <h1>
                                     Cool Dude Headphone</h1>
@@ -64,7 +66,7 @@
 
                     </div>
                     <div class="carousel-item">
-                        <div class="row p-5 d-flex align-items-center bg-info bg-gradient">
+                        <div class="row p-5 d-flex align-items-center panda-bg-info bg-gradient">
                             <div class="col-lg-7">
                                 <h1>
                                     Mega LCD TV For Sports</h1>
@@ -80,7 +82,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row p-5 d-flex align-items-center bg-info bg-gradient">
+                        <div class="row p-5 d-flex align-items-center panda-bg-info bg-gradient">
                             <div class="col-lg-7">
                                 <h1>
                                     X-Box for your living room</h1>
@@ -111,10 +113,11 @@
     </header>
 
     <main>
-        <section class="container my-5">
+        <section class="container my-5 categories">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <div class="col">
-                    <div class="p-3 border d-flex align-items-center justify-content-between bg-warning rounded-3">
+                    <div
+                        class="p-3 border d-flex align-items-center justify-content-between panda-bg-warning rounded-3">
                         <h1 class="text-white">Watch</h1>
                         <img src="images/categories/watch.png" alt="">
                     </div>
@@ -126,7 +129,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="p-3 border d-flex align-items-center justify-content-between bg-info rounded-3">
+                    <div class="p-3 border d-flex align-items-center justify-content-between panda-bg-info rounded-3">
                         <h1 class="text-white">Shoes</h1>
                         <img src="images/categories/shoes.png" alt="">
                     </div>
@@ -134,7 +137,7 @@
             </div>
         </section>
 
-        <section class="container">
+        <section class="container my-5" id="Shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -181,7 +184,7 @@
         </section>
 
 
-        <section class="container">
+        <section class="container my-5" id="Backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -227,11 +230,21 @@
             </div>
         </section>
 
+        <section style="height: 300px;"
+            class="contatiner mx-5 my-5 d-flex justify-content-center panda-bg-info align-items-center rounded-3"
+            id="Subscribe">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, specials and more</p>
+                <input type="text" placeholder="your email"><br>
+                <button class="btn btn-warning">Submit</button>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-
-
+    <footer class="mt-5">
+        <p class="text-center"><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
     <!-- java script link -->
     <script src="js/bootstrap.bundle.min.js"></script>
